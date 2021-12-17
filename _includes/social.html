@@ -1,9 +1,11 @@
-<ul class="social-ul">
+<div class="social">
     {% for social in site.data.social %}
-    <li class="social-li>
-        <a rel="me" href="{{social.url}}">
-            {{social.svg}}
-        </a>  
-    </li>
-    {% endfor %}
-</ul>
+    <div class="social-link">
+        <a rel="me" href="{{ social.url }}">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>{{ social.title }}</title>
+                <path d="{{ social.svg }}" />
+            </svg>
+        </a>
+    </div>
+</div>
