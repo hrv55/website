@@ -93,8 +93,7 @@ footer {
 
   &-top {
     margin: 0 auto;
-    font-size: .7rem;
-        
+    font-size: .7rem; 
   }
 
   &-btm {
@@ -102,14 +101,16 @@ footer {
   }
 }
 
-.social-ul{
+.social{
   text-align: center;
   padding: 0.26rem 0;
+  display: flex;
+  
+  &-link{
+    text-align: center;
+  }
 }
-    
-.social-li{
-  display: inline;
-}
+
 
 .tips {
   font-family: $fira;
