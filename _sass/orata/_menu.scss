@@ -26,7 +26,11 @@
     font-family: $fira;
     font-weight: bolder;
     color: $primary;
-    text-align: center;
+    display: flex;
+  }
+  
+  &-name {
+    margin: auto;
   }
 }
 
