@@ -1,7 +1,9 @@
 <div class="fullmenu">
   <div class="fullmenu-container">
-    {% for menu in site.menu %}
-    <div class="fullmenu-item">{{ menu.name }}</div>
-    {% endfor %}
+    <div class="fullmenu-list">
+      {% for menu in site.menu %}
+      <div class="fullmenu-item">{{ menu.name }}</div>
+      {% endfor %}
+    </div>
   </div>
 </div>
