@@ -1,7 +1,11 @@
 .nav {
   background-color: $black;
   overflow: auto;
+  width: 100%;
   height: 60px;
+  position: fixed;
+  top: 0;
+}
   
   &-container {
     display: flex;
