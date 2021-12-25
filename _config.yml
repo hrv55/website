@@ -35,6 +35,8 @@ plakat:
 menu:
   - name: "HOME"
     url: /
+  - name: "WORKS"
+    url: /about
   - name: "ABOUT"
     url: /about
 
