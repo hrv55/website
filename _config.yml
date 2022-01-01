@@ -14,10 +14,11 @@ maxPost:            7
 permalink:          pretty
 
 # Social Link
-steam:              zervwave
-github:             zervwave
-twitter:            zervwave
-bilibili:           zervwave
+social:
+  steam:            zervwave
+  github:           zervwave
+  twitter:          zervwave
+  bilibili:         zervwave
 
 # Markdown
 markdown:           kramdown
