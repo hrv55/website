@@ -6,19 +6,14 @@ url:                "https://zervwave.com"
 
 # Author Information
 author:
-  name:             "Harvey Wu (zervwave)"
+  name:             "Harvey Wu (@zervwave)"
   email:            "harveywu@outlook.it"
 
 maxPost:            7
 
 permalink:          pretty
 
-# Social Link
-social:
-  steam:            zervwave
-  github:           zervwave
-  twitter:          zervwave
-  bilibili:         zervwave
+# Social link information in _data/social.yml
 
 # Markdown
 markdown:           kramdown
