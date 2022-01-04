@@ -21,14 +21,16 @@ sass:
 
 plakat:
   url:              https://images2.alphacoders.com/884/thumb-1920-884331.jpg
-  location:         top
+  location:         center
   slogan:           Hi there !
 
 menu:
   - name: "HOME"
     url: /
+  - name: "BLOGS"
+    url: /blogs
   - name: "WORKS"
-    url: /about
+    url: /works
   - name: "ABOUT"
     url: /about
 
