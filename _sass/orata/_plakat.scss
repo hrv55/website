@@ -1,8 +1,9 @@
 .plakat {
-      &-container{
-        box-shadow: inset 0px 15px 15px -15px $black, inset 0px -15px 15px -15px $black;
+    margin-top: 80px;
+
+    &-container{
         display: flex;
-        height: 800px;
+        height: 750px;
         width: auto;
     }
     &-title{

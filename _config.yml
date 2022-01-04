@@ -20,7 +20,7 @@ sass:
   style:            compressed
 
 plakat:
-  url:              https://images2.alphacoders.com/884/thumb-1920-884331.jpg
+  url:              https://pic1.zhimg.com/v2-d91895053f7826a10a9264878399572c_b.webp
   location:         center
   slogan:           Hi there !
 
@@ -33,27 +33,6 @@ menu:
     url: /works
   - name: "ABOUT"
     url: /about
-
-classify:
-  - id: "1"
-    name: "Animation"
-    url: /animation
-    bg: "classify-image.png"
-    
-  - id: "2"
-    name: "Indie Game"
-    url: /indie-game
-    bg: "classify-image.png"
-    
-  - id: "3"
-    name: "Robot"
-    url: /robot
-    bg: "classify-image.png"
-    
-  - id: "4"
-    name: "Other"
-    url: /other
-    bg: "classify-image.png"
 
 plugins:
   - jekyll-seo-tag
