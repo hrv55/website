@@ -4,13 +4,17 @@
   top: 0;
   width: 100%;
   height: 100%;
+  transform: translateY(-100%);
   background: $white;
   opacity: 1;
-  display: none;
+  transition-duration: 0.45s;
+  background-image: -webkit-radial-gradient(#ccc 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: radial-gradient(#ccc 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 4px 4px;
 
   &.open {
-    display: block;
-    transition: all 0.4s ease;
+    transform: translateY(0);
+    transition: all 0.45s cubic-bezier(.4, .01, .53, .91);
   }
 
   &-container {
@@ -32,9 +36,17 @@
     font-weight: bolder;
     color: $primary;
     display: flex;
+
+    &:hover{
+      color: $danger;
+    }
   }
 
   &-name {
     margin: auto;
+    border-bottom: transparent solid 5px;
+    &:hover{
+      border-bottom: $black solid 5px;
+    }
   }
 }

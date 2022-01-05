@@ -27,6 +27,7 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+# *.webp, *.jpg, *png.
 plakat:
   url:              https://pic1.zhimg.com/v2-d91895053f7826a10a9264878399572c_b.webp
   location:         center
