@@ -1,4 +1,12 @@
 <script>
-window.onload = function(){
-}
+    window.onload = function () {}
+</script>
+<script>
+    const menu = document.querySelector(".nav-menu");
+    const menuBox = document.querySelector(".nav-menu-box");
+    const fullMenu = document.querySelector(".fullmenu");
+    menu.addEventListener("click", () => {
+        menuBox.classList.toggle("open");
+        fullMenu.classList.toggle("open")
+    });
 </script>

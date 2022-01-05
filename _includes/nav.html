@@ -3,20 +3,19 @@
         <div class="nav-container-title">
             <a href="{{ site.url }}">
                 <div class="nav-title">
-                    <div class="nav-title-left">ZERVWAVE</div>
-                    <div class="nav-title-right">
-                        <div class="nav-title-top">DYNAMICS</div>
-                        <div class="nav-title-bottom"><span>I</span>NDUSTRIES</div>
+                    <div class="nav-title-top">{{ site.navbar.title.first }}</div>
+                    <div class="nav-title-bottom">
+                        <div class="nav-title-bottom-content">
+                            <span>{{site.navbar.title.second}}</span>{{ site.navbar.title.third }}
+                        </div>
                     </div>
                 </div>
             </a>
         </div>
         <div class="nav-container-menu">
-            <div class="nav-menu" onclick="fullmenu()">
+            <div class="nav-menu">
                 <div class="nav-menu-box">
-                    <div class="nav-menu-line-1"></div>
-                    <div class="nav-menu-line-2"></div>
-                    <div class="nav-menu-line-3"></div>
+                    <div class="nav-menu-box-line"></div>
                 </div>
             </div>
         </div>

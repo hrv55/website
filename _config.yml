@@ -1,10 +1,18 @@
-title:              "Zervwave Dynamics Industries"
+title:              "Zervwave Industries"
 keywords:           "zerv,zervwave,zervwave industries,robot,animator,illustration,indie game,game,pixel art,pixel game"
 description:        "Animation, Indie Game and Robot."
 url:                "https://zervwave.com"
 name:               "Harvey Wu (@zervwave)"
 email:              "harveywu@outlook.it"
 
+# Navbar title
+navbar:
+  title:
+    first:          "ZERVWAVE"
+    second:         "I"
+    third:          "NDUSTRIES"
+
+# Latest blog show in the home page.
 maxPost:            7
 
 permalink:          pretty
