@@ -13,8 +13,16 @@ navbar:
     third:          "NDUSTRIES"
 
 # Latest blog show in the home page.
-maxPost:            7
+maxPost:            8
 
+# POST Category Options:
+#    [T]ECHNOLOGY
+#    [D]EVELOPMENT
+#    [U]PDATE
+#    [O]THER
+# More information in _includes/posts.html
+
+# Link format
 permalink:          pretty
 
 # Social link information in _data/social.yml

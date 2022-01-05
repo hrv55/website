@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Epic Games Unicorn
-date: 2021-12-13 10:18:00
+date: 2021-12-13 18:24:00
+cover: https://pic3.zhimg.com/v2-06c679362f9e3c3e9f84ae5dbf5752c1_b.webp
+category: O
 ---
 
 # epic-games-unicorn
@@ -22,7 +24,7 @@ The problem is that GitHub can't show such a large list of member, **but** only 
 
 So, you can replace ```{{}}``` with your information and run this command and make your account visibility becomes **PUBLIC**.
 
-```
+```shell
 curl -H "Accept: application/vnd.github.v3+json" \
 -H "Authorization: token {{your personal access tokens(E.g. ghp_xxx...xxx)}}" \
 -H "Content-Length: 0" \

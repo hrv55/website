@@ -1,9 +1,48 @@
 <div class="posts">
-    <div class="posts-container">
-      {% for post in site.posts limit:{{ site.maxPost }} %}
-      <div class="posts-items">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </div>
-      {% endfor %}
+  <div class="posts-container">
+    {% for post in site.posts limit:7 %}
+    <div class="posts-items-{{ forloop.index }}">
+
+      <a href="{{ post.url }}">
+        <div class="posts-item" style="background: url({{ post.cover }}) no-repeat center; background-size:cover;">
+          {% if post.category == 'T' %}
+          <div class="posts-item-category" style="background-color: rgb(0, 153, 153);">TECHNOLOGY</div>
+          {% elsif post.category == 'D' %}
+          <div class="posts-item-category" style="background-color: rgb(0, 47, 255);">DEVELOPMENT</div>
+          {% elsif post.category == 'U' %}
+          <div class="posts-item-category" style="background-color: rgb(43, 255, 0);">UPDATE</div>
+          {% elsif post.category == '' %}
+          <div class="posts-item-category" style="background-color: rgb(255, 0, 128);">OTHER</div>
+          {% else %}
+          <div class="posts-item-category" style="background-color: rgb(255, 0, 128);">OTHER</div>
+          {% endif %}
+          <div class="posts-item-title">{{ post.title }}</div>
+          <div class="posts-item-date">{{ post.date | date: '%B %d, %Y' }}</div>
+        </div>
+      </a>
     </div>
+    {% endfor %}
+    <!-- {% for post in site.posts limit:{{ site.maxPost }} %}
+    <a href="{{ post.url }}">
+      <div class="posts-items-{{ forloop.index }}">
+        <div class="posts-cover" style="background: url({{ post.cover }}) no-repeat center; background-size:cover;"></div>
+        <div class="posts-item">
+          {% if post.category == 'T' %}
+          <div class="posts-item-category" style="background-color: rgb(0, 153, 153);">TECHNOLOGY</div>
+          {% elsif post.category == 'D' %}
+          <div class="posts-item-category" style="background-color: rgb(0, 47, 255);">DEVELOPMENT</div>
+          {% elsif post.category == 'U' %}
+          <div class="posts-item-category" style="background-color: rgb(43, 255, 0);">UPDATE</div>
+          {% elsif post.category == '' %}
+          <div class="posts-item-category" style="background-color: rgb(255, 0, 128);">OTHER</div>
+          {% else %}
+          <div class="posts-item-category" style="background-color: rgb(255, 0, 128);">OTHER</div>
+          {% endif %}
+          <div class="posts-item-title">{{ post.title }}</div>
+          <div class="posts-item-date">{{ post.date | date: '%B %d, %Y' }}</div>
+        </div>
+      </div>
+    </a>
+    {% endfor %} -->
+  </div>
 </div>
