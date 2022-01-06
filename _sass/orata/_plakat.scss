@@ -1,19 +1,32 @@
 .plakat {
-    &-container{
+    &-container {
         display: flex;
-        height: 750px;
+        height: calc(100vh - 66px);
         width: auto;
+        flex-direction: column;
     }
-    &-title{
+
+    &-title {
         height: fit-content;
         width: fit-content;
         margin: auto;
+
+        &-content {
+            font-weight: bolder;
+            font-family: $fira;
+            font-size: 50px;
+            color: white;
+            margin: 20px;
+        }
     }
-    &-content{
-        font-weight: bolder;
-        font-family: $fira;
-        font-size: 50px;
-        color: white;
-        margin: 20px;
+
+    &-author{
+        align-self: flex-end;
+        padding: 5px;
+        &-content{
+            font-family: $fira;
+            color: $white;
+        }
     }
+
 }

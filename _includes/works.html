@@ -1,0 +1,23 @@
+<div class="works-title">
+    <div class="works-title-name">
+        Latest Works
+    </div>
+</div>
+<div class="works-container">
+    <div class="works-items">
+        {% for works in site.works %}
+        <div class="works-items-{{ forloop.index }}">
+            <img src="{{ works.url }}" alt="">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="works-bottom">
+    <div class="works-bottom-box">
+        <a href="/works">
+            <div class="works-bottom-button">
+                VIEW ALL WORKS
+            </div>
+        </a>
+    </div>
+</div>

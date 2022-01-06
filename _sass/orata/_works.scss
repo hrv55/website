@@ -1,0 +1,52 @@
+.works {
+    background-color: $light-grey;
+    border-bottom: $light-grey2 solid 1px;
+    padding: 20px 0;
+
+    &-title {
+        font-size: 30px;
+        font-family: $fira;
+        font-weight: bolder;
+        display: flex;
+        width: 100%;
+
+        &-name {
+            margin: 25px auto;
+            color: $light-black;
+        }
+    }
+
+    &-container {
+        padding: 10px 0;
+        overflow: hidden;
+        touch-action: pan-y;
+    }
+
+    &-items {
+        display: flex;
+        transition: all 1000ms ease-in-out;
+    }
+
+    &-bottom {
+        display: flex;
+
+        &-box {
+            margin: 25px auto;
+        }
+
+        &-button {
+            width: fit-content;
+            height: min-content;
+            padding: 15px;
+            background-color: $primary;
+            color: $white;
+            font-family: $fira;
+            font-weight: bolder;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+
+            &:hover {
+                background-color: #ff9999;
+            }
+        }
+    }
+}

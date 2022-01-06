@@ -1,5 +1,19 @@
 <script>
-    window.onload = function () {}
+    window.onload = function () {
+        var count = 0;
+        var index = 0;
+        setInterval(function () {
+            const works = document.querySelector(".works-items").style;
+            index += 250;
+            works.transform = "translate3d(-" + index + "px, 0, 0)";
+            count++;
+            if (count % 10 == 0) {
+                works.transform = "translate3d(0, 0, 0)";
+                count = 0;
+                index = 0;
+            }
+        }, 5000);
+    }
 </script>
 <script>
     const menu = document.querySelector(".nav-menu");
