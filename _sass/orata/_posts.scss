@@ -16,14 +16,18 @@
   }
 
   &-container {
-    padding: 10px 20px;
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 300px 300px;
-    grid-template-areas:
-      "a a b b c c d d"
-      "e e f f g g h h";
+    // padding: 10px 20px;
+    // display: grid;
+    // grid-gap: 15px;
+    // grid-template-columns: repeat(8, 1fr);
+    // grid-template-rows: repeat(2, 333px);
+    // grid-template-areas:
+    //   "a a b b c c d d"
+    //   "e e f f g g h h";
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
   }
 
 
@@ -79,21 +83,14 @@
     font-family: $fira;
     font-weight: bolder;
     display: flex;
-    flex-direction: column;
-
-    &:hover {
-      .posts-item-title {
-        border-bottom: $primary solid 3px;
-      }
-    }
+    flex-direction: row;
 
     &-cover {
-      width: auto;
-      height: 100%;
+      width: 20%;
     }
 
     &-box {
-      width: auto;
+      width: 100%;
       height: min-content;
       background-color: #FFF;
       padding: 10px;
@@ -111,16 +108,27 @@
       margin: 10px 0;
       color: $light-black;
       font-size: 22px;
-      border-bottom: $white solid 3px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       width: 20vw;
     }
+    .line-hover{
+      width: auto;
+      height: 3px;
+      background-color: $white;
+    }
+
+    &:hover {
+      .line-hover{
+        background-color: $primary;
+      }
+    }
 
     &-date {
       color: $grey;
       font-size: 10px;
+      margin: 8px 0 0 0;
     }
 
   }
@@ -156,7 +164,7 @@
       display: grid;
       grid-gap: 15px;
       grid-template-columns: auto;
-      grid-template-rows: repeat(3, 300px);
+      grid-template-rows: repeat(3, 333px);
       grid-template-areas:
         "a a b b c c"
         "d d e e f f"
@@ -176,7 +184,7 @@
       display: grid;
       grid-gap: 15px;
       grid-template-columns: auto;
-      grid-template-rows: repeat(4, 300px);
+      grid-template-rows: repeat(4, 333px);
       grid-template-areas:
         "a a b b"
         "c c d d"
@@ -197,7 +205,7 @@
       display: grid;
       grid-gap: 15px;
       grid-template-columns: auto;
-      grid-template-rows: repeat(8, 300px);
+      grid-template-rows: repeat(8, 333px);
       grid-template-areas:
         "a a"
         "b b"

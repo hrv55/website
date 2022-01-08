@@ -4,12 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
-main{
-  margin-top: 66px;
-}
 
 a {
   text-decoration: none;
+}
+
+main {
+  margin-top: 55px;
 }
 
 span {
@@ -19,111 +20,26 @@ span {
   font-weight: bold;
 }
 
-.bord-line{
+svg {
+  fill: currentColor;
+  color: $white;
+  padding: 8px;
+  width: 26px;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.bord-line {
   width: auto;
   height: 1px;
   background-color: $light-grey2;
   margin: 0 20px;
 }
 
-svg{
-  fill: currentColor;
-  color: $white;
-  padding: 8px;
-  width: 26px;
-  
-  &:hover {
-    color: $primary;
-  }
+.buffer {
+  height: 60px;
+  width: auto;
+  background-color: $light-grey3;
 }
-
-.classify {
-  background: rgba(0, 0, 0, 0) linear-gradient(-45deg, $primary, $secondary, $tertiary,$secondary,$primary,) repeat scroll 0% 0% / 400% 400%;
-  box-shadow: inset 0px 15px 15px -15px $black, inset 0px -15px 15px -15px $black;
-  animation: bg-color 10s infinite;
-  -webkit-animation: bg-color 10s infinite;
-  
-  &-container {
-    width: fit-content;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-    display: flex;
-    flex-flow: wrap;
-    margin: 0 auto;
-  }
-  
-  &-items {
-    margin: 10px;
-  }
-  
-  &-bg {
-    width: 400px;
-    height:240px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  &-bg:hover {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.09);
-  }
-  
-  @media only screen and (max-width: 700px){
-    &-bg {
-      width: 350px;
-      height:180px;
-    }
-  }
-}
-
-footer {
-  background-color: $black;
-  text-align: center;
-  font-family: $fira;
-  font-weight: bold;
-  padding: 30px 0 1rem 0;
-  color: $white;
-  width: 100%;
-
-  &-top {
-    margin: 0 auto;
-    font-size: .7rem;
-        
-  }
-
-  &-btm {
-    margin: 0 auto;
-  }
-}
-
-.social-ul{
-  text-align: center;
-  padding: 0.26rem 0;
-}
-    
-.social-li{
-  display: inline;
-}
-
-.tips {
-  font-family: $fira;
-  font-weight: bold;
-  text-align: center;
-}
-
-@-webkit-keyframes bg-color { 
-  0% { background-position: 0% 50%;}
-  25% { background-position: 50% 100%;}
-  50% { background-position: 100% 50%;}
-  75% { background-position: 50% 0%;}
-  100% { background-position: 0% 50%;}
- }
-
-@keyframes bg-color {
-  0% { background-position: 0% 50%;}
-  25% { background-position: 50% 100%;}
-  50% { background-position: 100% 50%;}
-  75% { background-position: 50% 0%;}
-  100% { background-position: 0% 50%;}
- }

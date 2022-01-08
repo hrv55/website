@@ -5,11 +5,13 @@
 </div>
 <div class="works-container">
     <div class="works-items">
-        {% for works in site.works %}
-        <div class="works-items-{{ forloop.index }}">
-            <img src="{{ works.url }}" alt="">
+        <div class="works-items-list">
+            {% for works in site.works %}
+            <div class="works-items-item">
+                <img src="{{ works.url }}" alt="" />
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 <div class="works-bottom">

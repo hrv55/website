@@ -1,7 +1,8 @@
 .plakat {
     &-container {
         display: flex;
-        height: calc(100vh - 66px);
+        height: 66vh;
+        min-height: 550px;
         width: auto;
         flex-direction: column;
     }
@@ -12,9 +13,9 @@
         margin: auto;
 
         &-content {
-            font-weight: bolder;
             font-family: $fira;
-            font-size: 50px;
+            font-weight: 500;
+            font-size: 40px;
             color: white;
             margin: 20px;
         }

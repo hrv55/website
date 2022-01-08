@@ -4,6 +4,7 @@ description:        "Animation, Indie Game and Robot."
 url:                "https://zervwave.com"
 name:               "Harvey Wu (@zervwave)"
 email:              "harveywu@outlook.it"
+local:              "en"
 
 # Navbar title
 navbar:

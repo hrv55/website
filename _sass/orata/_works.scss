@@ -23,8 +23,38 @@
     }
 
     &-items {
-        display: flex;
-        transition: all 1000ms ease-in-out;
+        &-list {
+            display: flex;
+            flex-wrap: nowrap;
+            height: auto;
+            width: 150%;
+
+            @media only screen and (max-width: 1200px) {
+                & {
+                    width: 200%;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                & {
+                    width: 400%;
+                }
+            }
+
+            margin-left: -10%;
+        }
+
+        &-item {
+            position: relative;
+            display: block;
+            float: left;
+            width: 100vw;
+            line-height: auto;
+
+            &>img {
+                width: 100%;
+            }
+        }
     }
 
     &-bottom {
