@@ -1,12 +1,12 @@
 <div class="works-title">
-    <div class="works-title-name">
+    <div class="works-title-content">
         Latest Works
     </div>
 </div>
 <div class="works-container">
     <div class="works-items">
         <div class="works-items-list">
-            {% for works in site.works %}
+            {% for works in site.data.works %}
             <div class="works-items-item">
                 <img src="{{ works.url }}" alt="" />
             </div>

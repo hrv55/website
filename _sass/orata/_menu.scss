@@ -15,7 +15,8 @@
 
   &.open {
     transform: translateY(0);
-    transition: all 0.75s ease-in-out, transform 0.25s 0.25s;;
+    transition: all 0.75s ease-in-out, transform 0.25s 0.25s;
+    ;
   }
 
   &-container {
@@ -38,7 +39,7 @@
     color: $primary;
     display: flex;
 
-    &:hover{
+    &:hover {
       color: $danger;
     }
   }
@@ -46,7 +47,8 @@
   &-name {
     margin: auto;
     border-bottom: transparent solid 5px;
-    &:hover{
+
+    &:hover {
       border-bottom: $black solid 5px;
     }
   }

@@ -1,81 +1,35 @@
 .posts {
   padding: 20px 0 20px 0;
   background-color: $light-grey;
+  &-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    
+    @media only screen and (max-width:1200px) {
+      & {
+        margin: auto 20px;
+      }
+    }
+  }
 
   &-title {
-    font-size: 30px;
+    font-size: 24px;
     font-family: $fira;
     font-weight: bolder;
     display: flex;
     width: 100%;
 
-    &-name {
+    &-content {
       margin: 25px auto;
       color: $light-black;
     }
   }
 
-  &-container {
-    // padding: 10px 20px;
-    // display: grid;
-    // grid-gap: 15px;
-    // grid-template-columns: repeat(8, 1fr);
-    // grid-template-rows: repeat(2, 333px);
-    // grid-template-areas:
-    //   "a a b b c c d d"
-    //   "e e f f g g h h";
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: auto;
-  }
-
-
   &-items {
-
-    &-1,
-    &-2,
-    &-3,
-    &-4,
-    &-5,
-    &-6,
-    &-7,
-    &-8 {
-      background-color: $grey;
-      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.09);
-    }
-
-    &-1 {
-      grid-area: a;
-    }
-
-    &-2 {
-      grid-area: b;
-    }
-
-    &-3 {
-      grid-area: c;
-    }
-
-    &-4 {
-      grid-area: d;
-    }
-
-    &-5 {
-      grid-area: e;
-    }
-
-    &-6 {
-      grid-area: f;
-    }
-
-    &-7 {
-      grid-area: g;
-    }
-
-    &-8 {
-      grid-area: h;
-    }
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+    margin: 10px auto;
   }
 
   &-item {
@@ -159,18 +113,6 @@
 
 @media only screen and (max-width: 1200px) {
   .posts {
-    &-container {
-      padding: 10px 20px;
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(3, 333px);
-      grid-template-areas:
-        "a a b b c c"
-        "d d e e f f"
-        "g g g h h h";
-    }
-
     &-item-title {
       width: 25vw;
     }
@@ -179,19 +121,6 @@
 
 @media only screen and (max-width: 900px) {
   .posts {
-    &-container {
-      padding: 10px 20px;
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(4, 333px);
-      grid-template-areas:
-        "a a b b"
-        "c c d d"
-        "e e f f"
-        "g g h h";
-    }
-
     &-item-title {
       width: 40vw;
     }
@@ -200,23 +129,6 @@
 
 @media only screen and (max-width: 600px) {
   .posts {
-    &-container {
-      padding: 10px 20px;
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: auto;
-      grid-template-rows: repeat(8, 333px);
-      grid-template-areas:
-        "a a"
-        "b b"
-        "c c"
-        "d d"
-        "e e"
-        "f f"
-        "g g"
-        "h h";
-    }
-
     &-item-title {
       width: 80vw;
     }

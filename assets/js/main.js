@@ -1,10 +1,7 @@
 // main.js
 
 function tips() {
-    console.log("*****************************");
-    console.log("Orata - The Theme of Jekyll.");
-    console.log("Designed by Harvey Wu.");
-    console.log("*****************************");
+    console.log("*****************************\nOrata - The Theme of Jekyll.\nDesigned by Harvey Wu.\n*****************************");
 }
 
 // Full screen menu.
@@ -18,6 +15,15 @@ function fullMenuController() {
     });
 }
 
+// Secret Launcher.
+function secretLauncher() {
+    const content = document.querySelector(".plakat-title-content");
+    const show = document.querySelector(".secret-dialog");
+    content.addEventListener("click", () => {
+        alert("Hi!");
+    });
+}
+
 // Works slider animation.
 function worksSliderAnimationController() {
     const worksList = document.querySelector(".works-items-list");
@@ -26,7 +32,7 @@ function worksSliderAnimationController() {
     worksList.appendChild(worksItem);
     worksList.animate(
         [{
-            left: "-" + worksItem.clientWidth+"px"
+            left: "-" + worksItem.clientWidth + "px"
         }], {
             easing: ['ease']
         }, 3000,

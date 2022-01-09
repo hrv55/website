@@ -1,7 +1,7 @@
 .plakat {
     &-container {
         display: flex;
-        height: 66vh;
+        height: 77vh;
         min-height: 550px;
         width: auto;
         flex-direction: column;
@@ -16,17 +16,29 @@
             font-family: $fira;
             font-weight: 500;
             font-size: 40px;
-            color: white;
+            color: $white;
             margin: 20px;
+            background: linear-gradient(to left, $white, $white) left top no-repeat, linear-gradient(to bottom, $white, $white) left top no-repeat, linear-gradient(to left, $white, $white) right top no-repeat, linear-gradient(to bottom, $white, $white) right top no-repeat, linear-gradient(to left, $white, $white) left bottom no-repeat, linear-gradient(to bottom, $white, $white) left bottom no-repeat, linear-gradient(to left, $white, $white) right bottom no-repeat, linear-gradient(to left, $white, $white) right bottom no-repeat;
+            background-size: auto, auto, auto, auto, auto, auto, auto, auto;
+            background-size: 3px 10px, 10px 3px, 3px 10px, 10px 3px;
+            padding: 6px;
+            transition-duration: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                padding: 12px;
+                transition: all .3 ease-in-out;
+            }
         }
     }
 
-    &-author{
+    &-author {
         align-self: flex-end;
         padding: 5px;
-        &-content{
+
+        &-content {
             font-family: $fira;
-            color: $white;
+            color: $light-grey2;
         }
     }
 

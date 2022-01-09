@@ -1,0 +1,21 @@
+.buffer {
+    height: 60px;
+    width: auto;
+    background-color: $light-grey3;
+    display: flex;
+    color: $white;
+    font-family: $fira;
+    font-weight: 700;
+
+    &-container {
+        margin: auto;
+
+        &>a {
+            color: $white;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

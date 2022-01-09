@@ -33,6 +33,10 @@
 
         &-content {
             margin: auto 0;
+
+            &>span>a {
+                color: $white;
+            }
         }
     }
 

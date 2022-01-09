@@ -4,13 +4,13 @@
     padding: 20px 0;
 
     &-title {
-        font-size: 30px;
+        font-size: 24px;
         font-family: $fira;
         font-weight: bolder;
         display: flex;
         width: 100%;
 
-        &-name {
+        &-content {
             margin: 25px auto;
             color: $light-black;
         }

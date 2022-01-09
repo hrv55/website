@@ -43,30 +43,9 @@ sass:
 plakat:
   url:              https://pic1.zhimg.com/v2-d91895053f7826a10a9264878399572c_b.webp
   location:         center
-  slogan:           Hi there !
+  slogan:           Hello World!
   author:           Internet
 
-works:
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2020/07/BNA_icon_02-250x250.jpg
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2018/10/Icon_B-250x250.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2016/12/LWATV_Key-250x250.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2016/01/lwa2_250.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2015/11/box_01.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2020/07/BNA_icon_02-250x250.jpg
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2018/10/Icon_B-250x250.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2016/12/LWATV_Key-250x250.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2016/01/lwa2_250.png
-  - name: "bna"
-    url: http://www.st-trigger.co.jp/wp-content/uploads/2015/11/box_01.png
 
 anibar:
   url: https://pic3.zhimg.com/v2-06c679362f9e3c3e9f84ae5dbf5752c1_b.webp
