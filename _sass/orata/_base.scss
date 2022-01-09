@@ -37,3 +37,18 @@ svg {
   background-color: $light-grey2;
   margin: 0 20px;
 }
+
+.module {
+  &-title {
+    font-size: 24px;
+    font-family: $fira;
+    font-weight: bolder;
+    display: flex;
+    width: 100%;
+
+    &-content {
+      margin: 25px auto;
+      color: $light-black;
+    }
+  }
+}

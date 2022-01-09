@@ -1,20 +1,7 @@
 .works {
     background-color: $light-grey;
     border-bottom: $light-grey2 solid 1px;
-    padding: 20px 0;
-
-    &-title {
-        font-size: 24px;
-        font-family: $fira;
-        font-weight: bolder;
-        display: flex;
-        width: 100%;
-
-        &-content {
-            margin: 25px auto;
-            color: $light-black;
-        }
-    }
+    padding: 0 0 20px 0;
 
     &-container {
         padding: 10px 0;
