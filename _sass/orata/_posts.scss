@@ -19,13 +19,14 @@
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 36px 12px;
+    grid-gap: 36px 0;
     padding: 15px 0;
   }
 
   &-item {
     font-family: $fira;
     font-weight: 600;
+    padding: 5px;
 
     &-cover {
       width: 100%;
@@ -150,7 +151,7 @@
       display: grid;
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(4, 1fr);
-      grid-gap: 12px;
+      grid-gap: 12px 0;
       padding: 15px 0;
     }
   }
@@ -163,7 +164,7 @@
       display: grid;
       grid-template-columns: repeat(1, 100%);
       grid-template-rows: repeat(8, 1fr);
-      grid-gap: 12px;
+      grid-gap: 12px 0;
       padding: 15px 0;
     }
   }
