@@ -1,4 +1,4 @@
-# Orata - Jekyll Theme
+# Leccia - Jekyll Theme.
 
 Designed by : Harvey Wu ( [@zervwave](https://github.com/zervwave) )
 

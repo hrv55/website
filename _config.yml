@@ -1,35 +1,14 @@
-title:              "Zervwave Industries"
+title:              "ZERVWAVE INDUSTRIES"
 keywords:           "zerv,zervwave,zervwave industries,robot,animator,illustration,indie game,game,pixel art,pixel game"
-description:        "Animation, Indie Game and Robot."
+description:        "Indie Game, Animation and Robot."
 url:                "https://zervwave.com"
-name:               "Harvey Wu (@zervwave)"
-email:              "harveywu@outlook.it"
-local:              "en"
-
-# Navbar title
-navbar:
-  title:
-    first:          "ZERVWAVE"
-    second:         "I"
-    third:          "NDUSTRIES"
-
-# The latest posts show up to 8 and they are in a grid layout, 
-# so it is a bit difficult to change to other numbers.
-#
-# POST Category Options:
-#    [T]ECHNOLOGY
-#    [D]EVELOPMENT
-#    [U]PDATE
-#    [O]THER
-#
-# More information in 
-# _includes/posts.html
-# _sass/orata/posts.scss
+locale:              "en"
+author:
+  name:             "Harvey Wu (@zervwave)"
+  email:            "harveywu@outlook.it"
 
 # Link format
 permalink:          pretty
-
-# Social link information in _data/social.yml
 
 # Markdown
 markdown:           kramdown
@@ -38,27 +17,6 @@ markdown:           kramdown
 sass:
   sass_dir:         _sass
   style:            compressed
-
-# *.webp, *.jpg, *png.
-plakat:
-  url:              https://pic1.zhimg.com/v2-d91895053f7826a10a9264878399572c_b.webp
-  location:         center
-  slogan:           Hello World!
-  author:           Internet
-
-
-anibar:
-  url: https://pic3.zhimg.com/v2-06c679362f9e3c3e9f84ae5dbf5752c1_b.webp
-
-menu:
-  - name: "HOME"
-    url: /
-  - name: "BLOGS"
-    url: /blogs
-  - name: "WORKS"
-    url: /works
-  - name: "ABOUT"
-    url: /about
 
 plugins:
   - jekyll-seo-tag

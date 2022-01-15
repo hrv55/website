@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ site.local }}">
+<html lang="{{ site.locale }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    
-    {% include menu.html %}
-    
-    {% include nav.html %}
+<body>
 
-    <main>
-      {{ content }}
-    </main>
+  {% include nav.html %}
 
-    {% include buffer.html %}
+  <main>
 
-    {% include foot.html %}
-    
-    {% include script.html %}
-    
-  </body>
+    {{ content }}
+
+  </main>
+
+  {% include footer.html %}
+
+  {% include script.html %}
+
+</body>
 
 </html>

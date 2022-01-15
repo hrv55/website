@@ -1,4 +1,4 @@
-/* main.js
+/* Leccia.js v0.1.0
 *
 *  Copyright 2021 Harvey Wu.
 *
@@ -14,18 +14,3 @@
 *  See the License for the specific language governing permissions and
 *  limitations under the License.
 */
-
-function initial() {
-    console.log("Leccia - The Theme of Jekyll.\nDesigned by Harvey Wu.");
-}
-
-// Full-screen menu for mobile.
-function fullMenuController() {
-    const menu = document.querySelector(".nav-menu");
-    const menuBox = document.querySelector(".nav-menu-box");
-    const fullMenu = document.querySelector(".fullmenu");
-    menu.addEventListener("click", () => {
-        menuBox.classList.toggle("open");
-        fullMenu.classList.toggle("open");
-    });
-}
