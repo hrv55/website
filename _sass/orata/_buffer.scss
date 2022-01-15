@@ -1,7 +1,7 @@
 .buffer {
     height: 60px;
     width: auto;
-    background-color: $light-grey3;
+    background-color: $grey;
     display: flex;
     color: $white;
     font-family: $fira;
@@ -14,7 +14,7 @@
             color: $white;
 
             &:hover {
-                color: $black;
+                color: $primary;
             }
         }
     }

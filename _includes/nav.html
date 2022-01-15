@@ -14,6 +14,17 @@
         </div>
         <div class="nav-container-menu">
             <div class="nav-menu">
+                <div class="nav-menu-list">
+                    <div class="nav-menu-list-item">
+                        |
+                        {% for menu in site.menu %}
+                        <a href="{{ menu.url }}">
+                            {{ menu.name }}
+                        </a>
+                        |
+                        {% endfor %}
+                    </div>
+                </div>
                 <div class="nav-menu-box">
                     <div class="nav-menu-box-line"></div>
                 </div>

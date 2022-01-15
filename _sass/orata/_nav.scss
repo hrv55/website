@@ -15,11 +15,14 @@
     height: 100%;
     max-width: 1200px;
     margin: auto;
+
     &-title,
     &-menu {
       margin: auto 0;
     }
+
     @media only screen and (max-width:1200px) {
+
       &-title,
       &-menu {
         margin: auto 20px;
@@ -32,7 +35,7 @@
     font-size: 26px;
     display: flex;
     font-family: $fira;
-    font-weight: bolder;
+    font-weight: 700;
     flex-direction: column;
 
     &-top {
@@ -51,7 +54,7 @@
         span {
           color: $primary;
           font-family: $fira;
-          font-weight: bolder;
+          font-weight: 700;
           font-size: 12px;
         }
       }
@@ -59,16 +62,37 @@
   }
 
   &-menu {
-    width: 30px;
-    height: 30px;
     background-color: $white;
     display: flex;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
 
-    &-box {
+    &-list {
+      height: auto;
+      width: auto;
       display: flex;
+      font-family: $fira;
+      font-weight: 700;
+      font-size: 16px;
+
+      &-item {
+        margin: auto;
+
+        &>a {
+          color: $black;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+
+
+    &-box {
+      display: none;
 
       &-line {
         height: 4px;
@@ -129,7 +153,7 @@
       font-size: 26px;
       display: flex;
       font-family: $fira;
-      font-weight: bolder;
+      font-weight: 700;
       flex-direction: column;
 
       &-top {
@@ -138,6 +162,30 @@
 
       &-bottom {
         display: none;
+      }
+    }
+
+    &-menu {
+
+      &-box {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    &-menu {
+      width: 30px;
+      height: 30px;
+
+      &-list {
+        display: none;
+      }
+
+      &-box {
+        display: flex;
       }
     }
   }

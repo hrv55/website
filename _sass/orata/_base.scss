@@ -17,7 +17,7 @@ span {
   color: $white;
   line-height: 1px;
   font-size: .7rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 svg {
@@ -35,14 +35,14 @@ svg {
   width: auto;
   height: 1px;
   background-color: $light-grey2;
-  margin: 0 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .module {
   &-title {
     font-size: 24px;
     font-family: $fira;
-    font-weight: bolder;
+    font-weight: 700;
     display: flex;
     width: 100%;
 

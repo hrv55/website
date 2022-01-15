@@ -1,7 +1,7 @@
 .plakat {
     &-container {
         display: flex;
-        height: 77vh;
+        height: 69vh;
         min-height: 550px;
         width: auto;
         flex-direction: column;
@@ -14,8 +14,8 @@
 
         &-content {
             font-family: $fira;
-            font-weight: 500;
-            font-size: 40px;
+            font-weight: 700;
+            font-size: 36px;
             color: $white;
             margin: 20px;
             background: linear-gradient(to left, $white, $white) left top no-repeat, linear-gradient(to bottom, $white, $white) left top no-repeat, linear-gradient(to left, $white, $white) right top no-repeat, linear-gradient(to bottom, $white, $white) right top no-repeat, linear-gradient(to left, $white, $white) left bottom no-repeat, linear-gradient(to bottom, $white, $white) left bottom no-repeat, linear-gradient(to left, $white, $white) right bottom no-repeat, linear-gradient(to left, $white, $white) right bottom no-repeat;
