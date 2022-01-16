@@ -1,22 +1,48 @@
-title:              "ZERVWAVE INDUSTRIES"
-keywords:           "zerv,zervwave,zervwave industries,robot,animator,illustration,indie game,game,pixel art,pixel game"
-description:        "Indie Game, Animation and Robot."
-url:                "https://zervwave.com"
-locale:              "en"
+title: "ZERVWAVE INDUSTRIES"
+keywords: "zerv,zervwave,zervwave industries,robot,animator,illustration,indie game,game,pixel art,pixel game"
+description: "Indie Game, Animation and Robot."
+url: "https://zervwave.com"
+locale: "en"
+
 author:
-  name:             "Harvey Wu (@zervwave)"
-  email:            "harveywu@outlook.it"
+  name: "Harvey Wu (@zervwave)"
+  email: "harveywu@outlook.it"
+
+# Social icon and link.
+# Icons:
+#     bilibili,github,steam,twitter,
+social:
+  - name: steam
+    url: "https://steamcommunity.com/id/zervwave"
+  - name: twitter
+    url: "https://twitter.com/zervwave"
+  - name: github
+    url: "https://github.com/zervwave"
+  - name: bilibili
+    url: "https://space.bilibili.com/285779859"
+  - name: email
+    url: "harveywu@outlook.it"
+
+menu:
+  - name: HOME
+    url: /
+  - name: BLOGS
+    url: /blogs
+  - name: WORKS
+    url: /works
+  - name: ABOUT
+    url: /about
 
 # Link format
-permalink:          pretty
+permalink: pretty
 
 # Markdown
-markdown:           kramdown
+markdown: kramdown
 
 # Assets
 sass:
-  sass_dir:         _sass
-  style:            compressed
+  sass_dir: _sass
+  style: compressed
 
 plugins:
   - jekyll-seo-tag

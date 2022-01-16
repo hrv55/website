@@ -2,8 +2,12 @@
 layout: default
 ---
 
-{% include background.html %}
+{% include home/bg.html %}
 
-{% include latest-posts.html %}
+<div class="content">
+    {% include home/news.html %}
 
-{% include latest-works.html %}
+    {% include home/hello.html %}
+
+    {% include home/works.html %}
+</div>

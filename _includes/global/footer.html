@@ -1,0 +1,33 @@
+<!-- Begin Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-copyright">
+            <div class="footer-copyright-top">
+                Copyright &copy; 2021 - {{ site.time | date: '%Y' }} {{ site.title }}.
+            </div>
+            <div class="footer-copyright-bottom">
+                Build with <a href="https://jekyllrb.com">Jekyll</a>.
+            </div>
+        </div>
+        <div class="footer-sociallink">
+            <div class="footer-sociallink-list">
+                {% for social in site.social %}
+                {% if social.name == 'email' %}
+                <a rel="me" href="mailto:{{social.url}}">
+                    <div class="footer-sociallink-item">
+                        <div class="footer-sociallink-item-icon social-icon-{{ social.name }}"></div>
+                    </div>
+                </a>
+                {% else %}
+                <a rel="me" href="{{social.url}}">
+                    <div class="footer-sociallink-item">
+                        <div class="footer-sociallink-item-icon social-icon-{{ social.name }}"></div>
+                    </div>
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->

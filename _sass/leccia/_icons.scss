@@ -1,0 +1,22 @@
+.social {
+
+    &-icon-steam {
+        mask: url('/assets/img/social-icons/steam.svg') no-repeat;
+    }
+
+    &-icon-twitter {
+        mask: url('/assets/img/social-icons/twitter.svg') no-repeat;
+    }
+
+    &-icon-github {
+        mask: url('/assets/img/social-icons/github.svg') no-repeat;
+    }
+
+    &-icon-bilibili {
+        mask: url('/assets/img/social-icons/bilibili.svg') no-repeat;
+    }
+
+    &-icon-email {
+        mask: url('/assets/img/social-icons/email.svg') no-repeat;
+    }
+}

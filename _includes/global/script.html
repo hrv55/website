@@ -1,0 +1,18 @@
+{% if page.layout == 'home' %}
+<!-- Begin Home Script -->
+<script>
+    window.onload = function () {
+        initial();
+    }
+    menuController();
+</script>
+<!-- End Home Script -->
+{% else %}
+<!-- Begin Script -->
+<script>
+    window.onload = function () {
+        initial();
+    }
+</script>
+<!-- End Script -->
+{% endif %}
